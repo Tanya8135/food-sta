@@ -1,0 +1,111 @@
+.header-border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $line-header-color;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.header-nav {
+  @include desktop {
+    justify-content: center;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// margin: 10px 735px 10px 0; -- должно быть такое значение
+// так получается, когда в .container не 1250px а 1280px
+.logo {
+  @include desktop {
+    margin: 10px 600px 10px 0;
+  }
+
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 10px 0;
+  width: 66px;
+  height: 52px;
+}
+
+.menu-header {
+  @include desktop {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 28px;
+  min-height: 28px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.icon-menu-header {
+  fill: $btn-menu-fill;
+}
+
+.header-list {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 28px;
+  padding: 10px 0;
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}
+
+.header-link {
+  @include font(14px, 700, 1.1);
+
+  color: $base-color-text;
+}
+
+.header-btn {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  @include font(13px, 500, 1.5);
+
+  @extend %button-green;
+
+  margin-left: 30px;
+}
