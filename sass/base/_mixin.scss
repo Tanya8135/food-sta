@@ -28,8 +28,8 @@
   }
 }
 
-@mixin short-font($fw, $lh) {
-  font-weight: $fw;
+@mixin short-font($fs, $lh) {
+  font-size: $fs;
   line-height: $lh;
 }
 
