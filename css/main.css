@@ -69,6 +69,16 @@ img {
   cursor: none;
 }
 
+.btn-info {
+  color: #2c2c2c;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #7eb101;
+  cursor: none;
+}
+
 .header-border {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -134,7 +144,7 @@ img {
 }
 
 .icon-menu-header {
-  fill: #7EB101;
+  fill: #7eb101;
 }
 
 .header-list {
@@ -229,10 +239,6 @@ img {
 
 .offerings {
   display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings_320.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings_320.png);
   background-repeat: no-repeat;
@@ -240,12 +246,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding-top: 0;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .offerings {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .offerings {
@@ -271,6 +271,12 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .apple-tablet {
@@ -287,6 +293,10 @@ img {
   }
 }
 
+.aplle-item {
+  padding-top: 41px;
+  padding-bottom: 60px;
+}
 .aplle-item:nth-child(n+2) {
   display: none;
   margin: 0;
@@ -327,4 +337,79 @@ img {
   line-height: 1.1;
   color: #2c2c2c;
   padding-bottom: 28px;
+}
+
+.info-item {
+  padding-bottom: 28px;
+}
+
+.info-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  fill: #7eb101;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c2c2c;
+  padding-bottom: 16px;
+}
+
+.info-text {
+  font-size: 14px;
+  line-height: 1.1;
+  color: #2c2c2c;
+  width: 252px;
+}
+
+.btn-info {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2c2c2c;
+  margin-right: 24px;
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .btn-info {
+    cursor: pointer;
+  }
+}
+
+.read-more {
+  font-size: 14px;
+  line-height: 1.4;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .read-more {
+    cursor: pointer;
+  }
+}
+
+.info-arrow {
+  margin-left: 3px;
 }/*# sourceMappingURL=main.css.map */
