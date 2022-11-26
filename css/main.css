@@ -21,8 +21,8 @@ img {
 
 .container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
@@ -36,7 +36,7 @@ img {
 }
 @media screen and (min-width: 1250px) and (max-width: 1920px) {
   .container {
-    width: 1250px;
+    width: 1240px;
   }
 }
 
@@ -225,4 +225,106 @@ img {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.offerings {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings_320.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings_320.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_320.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings768.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_768.png);
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings1280.png);
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1250px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1250px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1250px) and (max-width: 1920px) and (min-resolution: 2dppx) {
+  .offerings {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .apple-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.aplle-item:nth-child(n+2) {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .aplle-item {
+    margin-right: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .aplle-item:nth-child(n+2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 90px;
+    margin-right: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .aplle-item:nth-child(3) {
+    height: 136px;
+    margin-top: 140px;
+    margin-right: 0;
+  }
+}
+
+.offerings-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c2c2c;
+  padding-bottom: 28px;
+}
+
+.offerings-text {
+  font-size: 14px;
+  line-height: 1.1;
+  color: #2c2c2c;
+  padding-bottom: 28px;
 }/*# sourceMappingURL=main.css.map */
