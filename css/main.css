@@ -59,7 +59,7 @@ img {
   padding: 60px 0;
 }
 
-.btn-hero, .header-btn {
+.btn-subscribe, .btn-hero, .header-btn {
   color: #2c2c2c;
   padding: 6px 18px;
   border-radius: 30px;
@@ -461,6 +461,79 @@ img {
   padding: 17.5px;
 }
 
+.clients {
+  display: block;
+  max-width: 767px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients_320.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients_320.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients_768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients_768.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients@2_768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients@2_768.png);
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients_1280.png);
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1250px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1250px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1250px) and (max-width: 1920px) and (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients@2_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients@2_1280.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-clients@2_320.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-clients@2_320.png);
+  }
+}
+
+.clients-box {
+  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients-comment {
+  margin-bottom: 20px;
+}
+.clients-comment:last-child {
+  margin-bottom: 0;
+}
+
 .star-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,7 +553,17 @@ img {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #2c2c2c;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -500,8 +583,6 @@ img {
 .cleints-foto {
   width: 48px;
   height: 48px;
-  border: 2px solid #FFE550;
-  border-radius: 50%;
   margin: 0 16px 8px 8px;
 }
 
@@ -513,9 +594,110 @@ img {
       flex-wrap: wrap;
 }
 
+.clients-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2c2c2c;
+  padding-bottom: 2px;
+}
+
+.clients-status {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.clients-line {
+  border-right: 0.854167px solid #7EB101;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
 .clients-bg {
   width: 280px;
   background-color: yellowgreen;
   border-radius: 30px;
   border-top-left-radius: 0;
+}
+
+.banana-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -103px;
+}
+
+.subscribe-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2c2c2c;
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+.subscribe-text {
+  font-size: 14px;
+  line-height: 1.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2c2c2c;
+  padding-bottom: 40px;
+}
+
+.subscribe-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.sub-input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+.subscribe-input {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 131px 12px 11px;
+}
+
+.btn-subscribe-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn-subscribe {
+  padding: 11px 22px;
 }/*# sourceMappingURL=main.css.map */
