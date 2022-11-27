@@ -431,6 +431,19 @@ img {
   padding-bottom: 60px;
 }
 
+.favorites-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .favorites-item {
   margin-bottom: 20px;
 }
@@ -442,9 +455,67 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
   border: 11px solid #FFE550;
   background-color: #fff;
   border-radius: 50%;
   padding: 17.5px;
+}
+
+.star-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #FFE550;
+  padding: 8px 0 28px 8px;
+}
+
+.star-item {
+  margin-right: 4px;
+}
+.star-item:nth-child(5) {
+  margin-right: 0;
+}
+
+.clients-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c2c2c;
+  padding-bottom: 20px;
+}
+
+.clients-text {
+  font-size: 14px;
+  line-height: 1.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2c2c2c;
+  padding: 0 8px 32px 8px;
+}
+
+.cleints-foto {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #FFE550;
+  border-radius: 50%;
+  margin: 0 16px 8px 8px;
+}
+
+.clients-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients-bg {
+  width: 280px;
+  background-color: yellowgreen;
+  border-radius: 30px;
+  border-top-left-radius: 0;
 }/*# sourceMappingURL=main.css.map */

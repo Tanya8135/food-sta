@@ -1,33 +1,37 @@
 .favorites-title {
-@include font(28px, 700, 1.2);
+  @include font(28px, 700, 1.2);
 
-color: $title-section-color;
-text-align: center;
-padding-bottom: 20px;
+  color: $title-section-color;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .favorites-text {
-@include short-font(14px, 1.1);
+  @include short-font(14px, 1.1);
 
-color: $base-color-text;
-text-align: center;
-padding-bottom: 60px;
+  color: $base-color-text;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .favorites-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    &:nth-child(3) {
-        margin-bottom: 0;
-    }
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 
 .favorites-ring {
-    display: flex;
-    width: 280px;
-    // height: 280px;
-    border: 11px solid $ring-color;
-    background-color: $bg-white;
-    border-radius: 50%;
-    padding: 17.5px;
+  display: flex;
+  border: 11px solid $ring-color;
+  background-color: $bg-white;
+  border-radius: 50%;
+  padding: 17.5px;
 }

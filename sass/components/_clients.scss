@@ -1,0 +1,59 @@
+.star-list {
+    display: flex;
+    fill: $star-color;
+    padding: 8px 0 28px 8px;
+}
+
+.star-item {
+    margin-right: 4px;
+
+    &:nth-child(5) {
+        margin-right: 0;
+    }
+}
+
+.clients-title {
+  @include font(28px, 700, 1.2);
+
+  color: $title-section-color;
+  padding-bottom: 20px;
+}
+
+.clients-text {
+  @include short-font(14px, 1.1);
+
+  display: flex;
+  justify-content: center;
+  color: $base-color-text;
+  padding: 0 8px 32px 8px;
+}
+
+.cleints-foto {
+    width: 48px;
+    height: 48px;
+    border: 2px solid $ring-color;
+    border-radius: 50%;
+    margin: 0 16px 8px 8px;
+}
+
+.clients-info-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// .clients-name {
+
+// }
+
+// .clients-status {
+    
+// }
+
+.clients-bg {
+    width: 280px;
+    // height: 200px;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+}
+
