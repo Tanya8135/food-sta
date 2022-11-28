@@ -1,7 +1,7 @@
 .offerings {
   @include tablet {
     // max-width: 1239px;
-    padding-top: 0;
+    padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url(../../images/bg-fon/bg-fon-offerings768.png);
   }
@@ -13,6 +13,7 @@
 
   @include desktop {
     // max-width: 1920px;
+    padding-bottom: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url(../images/bg-fon/bg-fon-offerings1280.png);
 
@@ -38,14 +39,33 @@
   margin-left: auto;
   padding-top: 0;
 }
+// end fon ------------------
 
-// .offerings-box {
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-// }
+.offerings-box {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.offerings-info {
+  @include desktop {
+    display: block;
+    padding-top: 260px;
+    margin-left: 90px;
+  }
+}
+
+.offerings-title-box {
+  @include desktop {
+    max-width: 526px;
+  }
+}
 
 .apple-tablet {
+  @include desktop {
+    display: flex;
+  }
+
   @include tablet {
     display: flex;
     align-items: center;
@@ -55,9 +75,16 @@
 }
 
 .aplle-item {
+  @include desktop {
+    padding-top: 177px;
+    padding-bottom: 43px;
+    // min-width: 550px;
+  }
+
   @include tablet {
-padding-top: 150px;
-padding-bottom: 0;
+    padding-top: 150px;
+    padding-bottom: 0;
+    margin-right: 36px;
   }
 
   padding-top: 41px;
@@ -66,10 +93,6 @@ padding-bottom: 0;
     display: none;
     margin: 0;
     padding: 0;
-  }
-
-  @include tablet {
-    margin-right: 36px;
   }
 
   &:nth-child(n + 2) {
@@ -85,16 +108,18 @@ padding-bottom: 0;
 
   &:nth-child(3) {
     @include tablet {
-      //   display: flex;
       height: 136px;
       margin-top: 320px;
-      // align-items: center;
       margin-right: 0;
     }
   }
 }
 
 .offerings-title {
+  @include desktop {
+@include font(42px, 700, 1.2);
+  }
+
   @include tablet {
     @include font(42px, 700, 1.2);
 
@@ -106,25 +131,42 @@ padding-bottom: 0;
 
   color: $title-section-color;
   padding-bottom: 28px;
+
+  
 }
 
 .offerings-text {
+@include desktop {
+  @include short-font(16px, 1.2);
+
+}
+
   @include tablet {
     @include short-font(16px, 1.2);
 
-    max-width: 500px;
     padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-bottom: 32px;
   }
 
   @include short-font(14px, 1.1);
 
   color: $base-color-text;
   padding-bottom: 28px;
-  // width: 272px;
 }
+
+// .info-box {
+//   display: block;
+// }
 
 .info-list {
   @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
     display: flex;
   }
 }
@@ -135,6 +177,13 @@ padding-bottom: 0;
 
     & + .info-item {
       margin-left: 116px;
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 32px;
+    & + .info-item {
+      margin-left: 67px;
     }
   }
 
@@ -154,6 +203,10 @@ padding-bottom: 0;
 }
 
 .info-title {
+  @include desktop {
+    @include font(18px, 700, 1.4);
+  }
+
   @include font(18px, 700, 1.2);
 
   color: $title-section-color;
@@ -161,6 +214,10 @@ padding-bottom: 0;
 }
 
 .info-text {
+@include desktop {
+  @include short-font(14px, 1.5);
+}
+
   @include short-font(14px, 1.1);
 
   color: $base-color-text;
@@ -171,6 +228,8 @@ padding-bottom: 0;
 .btn-info {
   @include desktop {
     cursor: pointer;
+    margin-bottom: 100px;
+    margin-right: 0;
   }
 
   @extend %button-transpatent;
@@ -183,7 +242,7 @@ padding-bottom: 0;
 
 .read-more {
   @include desktop {
-    cursor: pointer;
+    display: none;
   }
 
   @include short-font(14px, 1.4);

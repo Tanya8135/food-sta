@@ -259,7 +259,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .offerings {
-    padding-top: 0;
+    padding: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings768.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings768.png);
   }
@@ -272,6 +272,7 @@ img {
 }
 @media screen and (min-width: 1250px) and (max-width: 1920px) {
   .offerings {
+    padding-bottom: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-offerings1280.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-offerings1280.png);
   }
@@ -289,6 +290,35 @@ img {
   }
 }
 
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-info {
+    display: block;
+    padding-top: 260px;
+    margin-left: 90px;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-title-box {
+    max-width: 526px;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .apple-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .apple-tablet {
     display: -webkit-box;
@@ -308,21 +338,23 @@ img {
   padding-top: 41px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .aplle-item {
+    padding-top: 177px;
+    padding-bottom: 43px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .aplle-item {
     padding-top: 150px;
     padding-bottom: 0;
+    margin-right: 36px;
   }
 }
 .aplle-item:nth-child(n+2) {
   display: none;
   margin: 0;
   padding: 0;
-}
-@media screen and (min-width: 768px) and (max-width: 1249px) {
-  .aplle-item {
-    margin-right: 36px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .aplle-item:nth-child(n+2) {
@@ -348,6 +380,13 @@ img {
   color: #2c2c2c;
   padding-bottom: 28px;
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .offerings-title {
     font-size: 42px;
@@ -364,16 +403,33 @@ img {
   color: #2c2c2c;
   padding-bottom: 28px;
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .offerings-text {
     font-size: 16px;
     line-height: 1.2;
-    max-width: 500px;
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .offerings-text {
+    padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1249px) {
+  .info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
   .info-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -390,6 +446,14 @@ img {
   }
   .info-item + .info-item {
     margin-left: 116px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .info-item {
+    padding-bottom: 32px;
+  }
+  .info-item + .info-item {
+    margin-left: 67px;
   }
 }
 
@@ -418,12 +482,25 @@ img {
   color: #2c2c2c;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .info-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
 
 .info-text {
   font-size: 14px;
   line-height: 1.1;
   color: #2c2c2c;
   width: 252px;
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .info-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 .btn-info {
@@ -437,6 +514,8 @@ img {
 @media screen and (min-width: 1250px) and (max-width: 1920px) {
   .btn-info {
     cursor: pointer;
+    margin-bottom: 100px;
+    margin-right: 0;
   }
 }
 
@@ -456,7 +535,7 @@ img {
 }
 @media screen and (min-width: 1250px) and (max-width: 1920px) {
   .read-more {
-    cursor: pointer;
+    display: none;
   }
 }
 
