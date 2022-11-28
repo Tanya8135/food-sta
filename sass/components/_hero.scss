@@ -1,3 +1,8 @@
+.hero {
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
 .hero-title {
     @include font(28px, 700, 1.2);
 

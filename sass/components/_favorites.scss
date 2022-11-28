@@ -1,4 +1,8 @@
 .favorites-title {
+  @include tablet {
+    @include font(42px, 700, 1.2);
+  }
+
   @include font(28px, 700, 1.2);
 
   color: $title-section-color;
@@ -7,6 +11,10 @@
 }
 
 .favorites-text {
+  @include tablet {
+    @include short-font(16px, 1.2);
+  }
+  
   @include short-font(14px, 1.1);
 
   color: $base-color-text;
