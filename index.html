@@ -169,12 +169,16 @@
           <p class="favorites-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
           <ul class="favorites-list list">
+
+            <div class="favotites-mob">
             <li class="favorites-item">
               <div class="favorites-ring">
                 <img
                   srcset="
                     ./images/320/gamburger_223.png   223w,
-                    ./images/320/gamburger@2_223.png 446w
+                    ./images/768/gamburger_268.png   268w,
+                    ./images/320/gamburger@2_223.png 446w,
+                    ./images/768/gamburger@2_268.png 536w
                   "
                   sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
                   src="./images/320/gamburger_223.png"
@@ -185,7 +189,12 @@
             <li class="favorites-item">
               <div class="favorites-ring">
                 <img
-                  srcset="./images/320/pasta_223.png 223w, ./images/320/pasta@2_223.png 446w"
+                  srcset="
+                    ./images/320/pasta_223.png   223w,
+                    ./images/768/pasta_268.png   268w,
+                    ./images/320/pasta@2_223.png 446w,
+                    ./images/768/pasta@2_268.png 536w
+                  "
                   sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
                   src="./images/320/pasta_223.png"
                   alt="Pasta"
@@ -195,13 +204,52 @@
             <li class="favorites-item">
               <div class="favorites-ring">
                 <img
-                  srcset="./images/320/pizza_223.png 223w, ./images/320/pizza@2_223.png 446w"
+                  srcset="
+                    ./images/320/pizza_223.png   223w,
+                    ./images/768/pizza_268.png   268w,
+                    ./images/320/pizza@2_223.png 446w,
+                    ./images/768/pizza@2_268.png 536w
+                  "
                   sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
                   src="./images/320/pizza_223.png"
                   alt="Pizza"
                 />
               </div>
             </li>
+            </div>
+
+            <div class="favorites-tablet">
+              <li class="favorites-item">
+                <div class="favorites-ring">
+                  <img
+                    srcset="./images/768/chicken_268.png 268w, ./images/768/chicken@2_268.png 536w"
+                    sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
+                    src="./images/768/chicken_268.png"
+                    alt="Chicken"
+                  />
+                </div>
+              </li>
+              <li class="favorites-item">
+                <div class="favorites-ring">
+                  <img
+                    srcset="./images/768/salat_268.png 268w, ./images/768/salat@2_268.png 536w"
+                    sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
+                    src="./images/768/salat_268.png"
+                    alt="Salat"
+                  />
+                </div>
+              </li>
+              <li class="favorites-item">
+                <div class="favorites-ring">
+                  <img
+                    srcset="./images/768/borshch_268.png 268w, ./images/768/borshch@2_268.png 536w"
+                    sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 223px"
+                    src="./images/768/borshch_268.png"
+                    alt="Borshch"
+                  />
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -360,24 +408,23 @@
 
           <!-- Form -->
           <div class="subscribe-form">
-          <form name="subscribe-form" autocomplete="on" novalidate>
-            <label class="subscribe-label">
-              <div class="sub-input-box">
-              <input
-                class="subscribe-input"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-</div>
-            </label>
+            <form name="subscribe-form" autocomplete="on" novalidate>
+              <label class="subscribe-label">
+                <div class="sub-input-box">
+                  <input
+                    class="subscribe-input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </label>
 
-            <div class="btn-subscribe-box">
-            <button type="button" class="btn-subscribe">Subscribe</button>
+              <div class="btn-subscribe-box">
+                <button type="button" class="btn-subscribe">Subscribe</button>
+              </div>
+            </form>
           </div>
-          </form>
-          </div>
-
         </div>
       </section>
     </main>
