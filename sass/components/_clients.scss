@@ -2,33 +2,33 @@
   @include tablet {
     // max-width: 1239px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../../images/bg-fon/bg-fon-clients_768.png);
+      url(../images/bg-fon/bg-fon-clients_768.png);
   }
 
   @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../../images/bg-fon/bg-fon-clients@2_768.png);
+      url(../images/bg-fon/bg-fon-clients@2_768.png);
   }
 
   @include desktop {
     // max-width: 1920px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../../images/bg-fon/bg-fon-clients_1280.png);
+      url(../images/bg-fon/bg-fon-clients_1280.png);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-        url(../../images/bg-fon/bg-fon-clients@2_1280.png);
+        url(../images/bg-fon/bg-fon-clients@2_1280.png);
     }
   }
 
   display: block;
   max-width: 767px;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../../images/bg-fon/bg-fon-clients_320.png);
+    url(../images/bg-fon/bg-fon-clients_320.png);
 
   @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../../images/bg-fon/bg-fon-clients@2_320.png);
+      url(../images/bg-fon/bg-fon-clients@2_320.png);
   }
 
   display: flex;
