@@ -706,6 +706,20 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .article-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .clients-box {
   max-width: 320px;
   display: -webkit-box;
@@ -719,9 +733,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-box {
+    max-width: 768px;
+  }
+}
 
 .clients-comment {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-comment + .clients-comment {
+    margin-left: 32px;
+  }
 }
 .clients-comment:last-child {
   margin-bottom: 0;
@@ -759,6 +783,13 @@ img {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-title {
+    font-size: 42px;
+    line-height: 1.2;
+    display: block;
+  }
+}
 
 .clients-text {
   font-size: 14px;
@@ -771,6 +802,25 @@ img {
           justify-content: center;
   color: #2c2c2c;
   padding: 0 8px 32px 8px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-text {
+    font-size: 16px;
+    line-height: 1.2;
+    display: block;
+  }
+}
+
+.clients-bg {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-bg {
+    width: 336px;
+  }
 }
 
 .cleints-foto {
@@ -785,6 +835,22 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.clients-text-info {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 auto;
+  max-width: 264px;
+  color: #2c2c2c;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .clients-text-info {
+    font-size: 18px;
+    max-width: 312px;
+  }
 }
 
 .clients-name {
@@ -805,13 +871,6 @@ img {
   border-right: 0.854167px solid #7EB101;
   margin-left: 16px;
   margin-bottom: 8px;
-}
-
-.clients-bg {
-  width: 280px;
-  background-color: yellowgreen;
-  border-radius: 30px;
-  border-top-left-radius: 0;
 }
 
 .banana-img {

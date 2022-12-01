@@ -41,7 +41,19 @@
   padding-top: 0;
 }
 
+.article-box {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .clients-box {
+  @include tablet {
+    max-width: 768px;
+  }
+
   max-width: 320px;
   display: flex;
   flex-direction: column;
@@ -49,6 +61,12 @@
 }
 
 .clients-comment {
+  @include tablet {
+& + .clients-comment {
+  margin-left: 32px;
+}
+  }
+
   margin-bottom: 20px;
 
   &:last-child {
@@ -71,23 +89,44 @@
 }
 
 .clients-title {
+  @include tablet {
+    @include short-font(42px, 1.2);
+    display: block;
+  }
+
   @include font(28px, 700, 1.2);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $title-section-color;
+  color: $base-color-text;
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
 .clients-text {
+  @include tablet {
+    @include short-font(16px, 1.2);
+    display: block;
+  }
+
   @include short-font(14px, 1.1);
 
   display: flex;
   justify-content: center;
   color: $base-color-text;
   padding: 0 8px 32px 8px;
+}
+
+.clients-bg {
+  @include tablet {
+    width: 336px;
+  }
+
+  width: 280px;
+  background-color: $bg-white;
+  border-radius: 30px;
+  border-top-left-radius: 0;
 }
 
 .cleints-foto {
@@ -99,6 +138,22 @@
 .clients-info-box {
   display: flex;
   flex-wrap: wrap;
+}
+
+.clients-text-info {
+  @include tablet {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 18px;
+    max-width: 312px;
+  }
+  @include font(16px, 700, 1.2);
+
+  margin: 0 auto;
+  max-width: 264px;
+  color: $base-color-text;
+  padding-bottom: 40px;
 }
 
 .clients-name {
@@ -118,14 +173,6 @@
   border-right: 0.854167px solid $line-commit-green;
   margin-left: 16px;
   margin-bottom: 8px;
-}
-
-.clients-bg {
-  width: 280px;
-  // height: 200px;
-  background-color: yellowgreen;
-  border-radius: 30px;
-  border-top-left-radius: 0;
 }
 
 .banana-img {
