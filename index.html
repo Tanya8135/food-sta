@@ -417,9 +417,16 @@
         <div class="container">
           <div class="banana-img">
             <img
-              srcset="./images/320/banana_320.png 280w, ./images/320/banana@2_320.png 560w"
-              sizes="(min-width: 1920px) 315px, (min-width: 768px) 268px, (min-width: 320px) 280px"
-              src="./images/320/banana_320.png"
+              srcset="
+                ./images/320/banana_161.png     161w,
+                ./images/768/banana_281.png     281w,
+                ./images/1280/banana_546.png    546w,
+                ./images/320/banana@2_161.png   322w,
+                ./images/768/banana@2_281.png   562w,
+                ./images/1280/banana@2_546.png 1092w
+              "
+              sizes="(min-width: 1280px) 546px, (min-width: 768px) 281px, (min-width: 320px) 161px"
+              src="./images/320/banana_161.png"
               alt="Banana"
             />
           </div>
@@ -433,6 +440,7 @@
           <div class="subscribe-form">
             <form name="subscribe-form" autocomplete="on" novalidate>
               <label class="subscribe-label">
+                <div class="test">
                 <div class="sub-input-box">
                   <input
                     class="subscribe-input"
@@ -445,6 +453,7 @@
 
               <div class="btn-subscribe-box">
                 <button type="button" class="btn-subscribe">Subscribe</button>
+              </div>
               </div>
             </form>
           </div>

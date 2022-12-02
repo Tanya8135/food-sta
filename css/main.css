@@ -873,11 +873,27 @@ img {
   margin-bottom: 8px;
 }
 
+.subscribe {
+  padding-top: 0;
+}
+
 .banana-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -103px;
+  margin: 0 auto;
+  margin-top: -45px;
+  max-width: 161px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .banana-img {
+    margin: 0;
+    margin-left: 455px;
+    margin-top: -75px;
+    max-width: 281px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .banana-img {
+    max-width: 546px;
+  }
 }
 
 .subscribe-title {
@@ -894,6 +910,13 @@ img {
   padding-top: 17px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .subscribe-title {
+    font-size: 42px;
+    line-height: 1.2;
+    padding-top: 20px;
+  }
+}
 
 .subscribe-text {
   font-size: 14px;
@@ -907,11 +930,33 @@ img {
   color: #2c2c2c;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .subscribe-text {
+    font-size: 16px;
+    padding-bottom: 24px;
+    width: 656px;
+  }
+}
 
 .subscribe-form {
   display: block;
   margin: 0 auto;
   max-width: 280px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .subscribe-form .test {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .sub-input-box {
@@ -923,22 +968,25 @@ img {
           justify-content: center;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .sub-input-box {
+    padding: 0;
+  }
+}
 
 .subscribe-input {
   font-size: 12px;
   line-height: 1.5;
   color: #505050;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   outline: none;
   padding: 12px 131px 12px 11px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .subscribe-input {
+    padding: 12px 244px 12px 11px;
+  }
 }
 
 .btn-subscribe-box {
@@ -951,5 +999,13 @@ img {
 }
 
 .btn-subscribe {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
   padding: 11px 22px;
+}
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .btn-subscribe {
+    margin-left: 22px;
+  }
 }/*# sourceMappingURL=main.css.map */

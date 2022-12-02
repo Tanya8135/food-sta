@@ -1,4 +1,30 @@
+.subscribe {
+  padding-top: 0;
+}
+
+.banana-img {
+  @include tablet {
+    margin: 0;
+    margin-left: 455px;
+    margin-top: -75px;
+    max-width: 281px;
+  }
+
+  @include desktop {
+    max-width: 546px;
+  }
+
+  margin: 0 auto;
+  margin-top: -45px;
+  max-width: 161px;
+}
+
 .subscribe-title {
+  @include tablet {
+    @include short-font(42px, 1.2);
+    padding-top: 20px;
+  }
+
   @include font(28px, 700, 1.2);
 
   display: flex;
@@ -9,6 +35,12 @@
 }
 
 .subscribe-text {
+  @include tablet {
+    font-size: 16px;
+    padding-bottom: 24px;
+    width: 656px;
+  }
+
   @include short-font(14px, 1.1);
 
   display: flex;
@@ -18,11 +50,20 @@
 }
 
 .subscribe-form {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-display: block;
-margin: 0 auto;
+  @include tablet {
+    display: flex;
+    margin: 0;
+    // max-width: 768px;
+  }
+
+  .test {
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  display: block;
+  margin: 0 auto;
   max-width: 280px;
 }
 
@@ -31,18 +72,26 @@ margin: 0 auto;
 // }
 
 .sub-input-box {
+  @include tablet {
+    padding: 0;
+  }
+  
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
 
 .subscribe-input {
+  @include tablet {
+    padding: 12px 244px 12px 11px;
+  }
+
   @include short-font(12px, 1.5);
 
   color: $email-color-text;
 
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   outline: none;
@@ -55,7 +104,11 @@ margin: 0 auto;
 }
 
 .btn-subscribe {
+  @include tablet {
+    margin-left: 22px;
+  }
   @extend %button-green;
 
+  @include font(13px, 500, 1.5);
   padding: 11px 22px;
 }
