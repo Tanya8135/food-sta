@@ -11,6 +11,9 @@
   }
 
   @include desktop {
+    margin: 0;
+    margin-left: 656px;
+    margin-top: -75px;
     max-width: 546px;
   }
 
@@ -75,7 +78,7 @@
   @include tablet {
     padding: 0;
   }
-  
+
   display: flex;
   justify-content: center;
   padding-bottom: 20px;

@@ -12,6 +12,7 @@
 
   @include desktop {
     // max-width: 1920px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url(../images/bg-fon/bg-fon-clients_1280.png);
 
@@ -44,14 +45,23 @@
 .article-box {
   @include tablet {
     display: flex;
-    align-items: center;
     justify-content: center;
+  }
+
+  @include desktop {
+    display: flex;
+    // justify-content: center;
   }
 }
 
 .clients-box {
   @include tablet {
     max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    margin: 0;
   }
 
   max-width: 320px;
@@ -62,9 +72,15 @@
 
 .clients-comment {
   @include tablet {
-& + .clients-comment {
-  margin-left: 32px;
-}
+    & + .clients-comment {
+      margin-left: 32px;
+    }
+  }
+
+  @include desktop {
+    & + .clients-comment {
+      margin-left: 139px;
+    }
   }
 
   margin-bottom: 20px;
@@ -75,6 +91,14 @@
 }
 
 .star-list {
+  @include tablet {
+    padding: 12px 0 28px 12px;
+  }
+
+  @include desktop {
+    padding: 14px 0 28px 14px;
+  }
+
   display: flex;
   fill: $star-color;
   padding: 8px 0 28px 8px;
@@ -94,6 +118,12 @@
     display: block;
   }
 
+  @include desktop {
+    @include short-font(42px, 1.2);
+    display: block;
+    padding-top: 100px;
+  }
+
   @include font(28px, 700, 1.2);
 
   display: flex;
@@ -106,6 +136,11 @@
 
 .clients-text {
   @include tablet {
+    @include short-font(16px, 1.2);
+    display: block;
+  }
+
+  @include desktop {
     @include short-font(16px, 1.2);
     display: block;
   }
@@ -123,6 +158,10 @@
     width: 336px;
   }
 
+  @include desktop {
+    width: 501px;
+  }
+
   width: 280px;
   background-color: $bg-white;
   border-radius: 30px;
@@ -130,6 +169,13 @@
 }
 
 .cleints-foto {
+  @include tablet {
+    margin: 0 16px 12px 12px;
+  }
+
+  @include desktop {
+    margin: 0 16px 14px 14px;
+  }
   width: 48px;
   height: 48px;
   margin: 0 16px 8px 8px;
@@ -148,6 +194,12 @@
     font-size: 18px;
     max-width: 312px;
   }
+
+  @include desktop {
+    font-size: 18px;
+    max-width: 473px;
+  }
+
   @include font(16px, 700, 1.2);
 
   margin: 0 auto;
@@ -170,8 +222,15 @@
 }
 
 .clients-line {
+  @include tablet {
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    margin-bottom: 14px;
+  }
+
   border-right: 0.854167px solid $line-commit-green;
   margin-left: 16px;
   margin-bottom: 8px;
 }
-
