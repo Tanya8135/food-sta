@@ -967,6 +967,12 @@ img {
   padding-top: 0;
 }
 
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .desktop-container {
+    margin: 0;
+  }
+}
+
 .banana-img {
   margin: 0 auto;
   margin-top: -45px;
@@ -983,7 +989,7 @@ img {
 @media screen and (min-width: 1250px) and (max-width: 1920px) {
   .banana-img {
     margin: 0;
-    margin-left: 656px;
+    margin-left: 110px;
     margin-top: -75px;
     max-width: 546px;
   }
@@ -1010,6 +1016,13 @@ img {
     padding-top: 20px;
   }
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .subscribe-title {
+    font-size: 42px;
+    line-height: 1.2;
+    display: block;
+  }
+}
 
 .subscribe-text {
   font-size: 14px;
@@ -1026,8 +1039,16 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .subscribe-text {
     font-size: 16px;
+    line-height: 1.5;
     padding-bottom: 24px;
     width: 656px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .subscribe-text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
   }
 }
 
@@ -1044,11 +1065,37 @@ img {
     margin: 0;
   }
 }
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .subscribe-form {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1249px) {
-  .subscribe-form .test {
+  .subscribe-form .form-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .subscribe-form .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .desktop-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .desktop-conten {
+    min-width: 656px;
   }
 }
 
@@ -1062,6 +1109,11 @@ img {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
+  .sub-input-box {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
   .sub-input-box {
     padding: 0;
   }
@@ -1100,5 +1152,10 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .btn-subscribe {
     margin-left: 22px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1920px) {
+  .btn-subscribe {
+    margin-left: 32px;
   }
 }/*# sourceMappingURL=main.css.map */
