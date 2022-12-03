@@ -13,19 +13,24 @@
     margin: 0;
     margin-left: 455px;
     margin-top: -75px;
-    max-width: 281px;
+    // max-width: 281px;
   }
 
   @include desktop {
     margin: 0;
     margin-left: 110px;
     margin-top: -75px;
-    max-width: 546px;
+    // max-width: 546px;
   }
 
+  display: flex;
   margin: 0 auto;
   margin-top: -45px;
-  max-width: 161px;
+  // max-width: 161px;
+}
+
+.banana-box {
+  display: flex
 }
 
 .subscribe-title {
