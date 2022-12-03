@@ -11,6 +11,9 @@
   }
 
   @include desktop {
+    // position: relative;
+    // top: 0%;
+    // left: 0;
     // max-width: 1920px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
