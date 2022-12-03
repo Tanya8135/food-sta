@@ -1,26 +1,107 @@
 .hero {
-    padding-top: 60px;
-    padding-bottom: 0;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.hero-flex {
+  display: flex;
+}
+
+.hero-box {
+  display: block;
+}
+
+.hero-img {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  display: flex;
+  padding-top: 149px;
+}
+
+.hero-circle {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  // display: flex;
+  position: relative;
+  border: 14px solid $circle-color;
+  border-radius: 50%;
+}
+
+.bg-arrow-l {
+  position: absolute;
+  top: 45%;
+  left: -8%;
+  display: flex;
+  width: 30px;
+  height: 34px;
+  background-color: $bg-white;
+  fill: $arrow-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transform: rotate(180deg);
+}
+
+.bg-arrow-r {
+  position: absolute;
+  top: 45%;
+  left: 98%;
+  display: flex;
+  width: 30px;
+  height: 34px;
+  background-color: $bg-white;
+  fill: $arrow-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transform: rotate(0deg);
 }
 
 .hero-title {
-    @include font(28px, 700, 1.2);
+  @include tablet {
+    min-width: 537px;
+    font-size: 42px;
+    padding-bottom: 44px;
+  }
 
-    color: $title-hero-color;
-    padding-bottom: 28px;
+  @include font(28px, 700, 1.2);
+
+  color: $title-hero-color;
+  padding-bottom: 28px;
 }
 
 .hero-text {
-    @include short-font(14px, 1.5);
+  @include tablet {
+    max-width: 336px;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
 
-    color: $base-color-text;
-    padding-bottom: 28px;
-    // width: 266px;
+  @include short-font(14px, 1.5);
+
+  color: $base-color-text;
+  padding-bottom: 28px;
+  // width: 266px;
 }
 
 .btn-hero {
-    @include font(13px, 500, 1.5);
-    
-    @extend %button-green;
-}
+  @include font(13px, 500, 1.5);
 
+  @extend %button-green;
+}

@@ -66,15 +66,42 @@
     <main class="main">
       <!-- Hero -->
       <section class="hero section">
-        <div class="container">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-            commodo diam libero vitae erat.
-          </p>
+        <div class="container hero-flex">
+          <div class="hero-box">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+              eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
+              nulla, ut commodo diam libero vitae erat.
+            </p>
 
-          <button type="button" class="btn-hero">Order Now</button>
+            <button type="button" class="btn-hero">Order Now</button>
+          </div>
+
+          <div class="hero-img">
+            <div class="hero-circle">
+              <img srcset="./images/768/cutlet_292.png 292w,
+              ./images/1280/cutlet_528.png 528w,
+              ./images/768/cutlet@2_292.png 584w,
+              ./images/1280/cutlet@2_528.png 1056w"
+
+              sizes="(min-width: 1920px) 528px, (min-width: 768px) 292px"
+
+              src="./images/768/cutlet_292.png" alt="Cutlet">
+
+              <div class="bg-arrow-l">
+              <svg viewBox="0 0 100 100" class="info-arrow" width="30">
+                <use xlink:href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              </div>
+
+              <div class="bg-arrow-r">
+                <svg viewBox="0 0 100 100" class="info-arrow" width="30">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+                </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -174,7 +201,7 @@
           <ul class="favorites-list list">
             <div class="favorites-desktop">
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/320/gamburger_223.png    223w,
@@ -191,7 +218,7 @@
                 </div>
               </li>
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/320/pasta_223.png    223w,
@@ -208,7 +235,7 @@
                 </div>
               </li>
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/320/pizza_223.png   223w,
@@ -228,7 +255,7 @@
 
             <div class="favotites-mob favorites-tablet favorites-desktop">
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/768/chicken_268.png    268w,
@@ -243,7 +270,7 @@
                 </div>
               </li>
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/768/salat_268.png   268w,
@@ -258,7 +285,7 @@
                 </div>
               </li>
               <li class="favorites-item">
-                <div class="favorites-ring">
+                <div class="favorites-circle">
                   <img
                     srcset="
                       ./images/768/borshch_268.png    268w,
@@ -416,7 +443,9 @@
       <section class="subscribe section">
         <div class="container desktop-container">
           <div class="desktop-flex">
-            <!-- <div class="banana-img">
+
+            <div class="banana-box">
+            <div class="banana-img">
             <img
               srcset="
                 ./images/320/banana_161.png     161w,
@@ -430,7 +459,8 @@
               src="./images/320/banana_161.png"
               alt="Banana"
             />
-          </div> -->
+          </div>
+          </div>
 
             <div class="desktop-conten">
               <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
@@ -460,7 +490,7 @@
               </div>
             </div>
 
-            <div class="banana-img">
+            <!-- <div class="banana-img">
               <img
                 srcset="
                   ./images/320/banana_161.png     161w,
@@ -474,7 +504,7 @@
                 src="./images/320/banana_161.png"
                 alt="Banana"
               />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
