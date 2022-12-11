@@ -12,7 +12,7 @@
       url(../images/bg-fon/bg-fon-offerings@2_768.png);
   }
 
-  @include desktop {
+  @include max-screen {
     // max-width: 1920px;
     padding-bottom: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -43,13 +43,13 @@
 // end fon ------------------
 
 .offerings-box {
-  @include desktop {
+  @include max-screen {
     display: flex;
   }
 }
 
 .offerings-info {
-  @include desktop {
+  @include max-screen {
     display: block;
     padding-top: 260px;
     margin-left: 90px;
@@ -57,13 +57,13 @@
 }
 
 .offerings-title-box {
-  @include desktop {
+  @include max-screen {
     max-width: 526px;
   }
 }
 
 .apple-tablet {
-  @include desktop {
+  @include max-screen {
     display: flex;
   }
 
@@ -76,7 +76,7 @@
 }
 
 .aplle-item {
-  @include desktop {
+  @include max-screen {
     padding-top: 177px;
     padding-bottom: 43px;
     // min-width: 550px;
@@ -117,7 +117,7 @@
 }
 
 .offerings-title {
-  @include desktop {
+  @include max-screen {
 @include font(42px, 700, 1.2);
   }
 
@@ -137,7 +137,7 @@
 }
 
 .offerings-text {
-@include desktop {
+@include max-screen {
   @include short-font(16px, 1.2);
 
 }
@@ -148,7 +148,7 @@
     padding-bottom: 40px;
   }
 
-  @include desktop {
+  @include max-screen {
     padding-bottom: 32px;
   }
 
@@ -167,7 +167,7 @@
     display: flex;
   }
 
-  @include desktop {
+  @include max-screen {
     display: flex;
   }
 }
@@ -181,7 +181,7 @@
     }
   }
 
-  @include desktop {
+  @include max-screen {
     padding-bottom: 32px;
     & + .info-item {
       margin-left: 67px;
@@ -204,7 +204,7 @@
 }
 
 .info-title {
-  @include desktop {
+  @include max-screen {
     @include font(18px, 700, 1.4);
   }
 
@@ -215,7 +215,7 @@
 }
 
 .info-text {
-@include desktop {
+@include max-screen {
   @include short-font(14px, 1.5);
 }
 
@@ -227,7 +227,7 @@
 
 // Buttons ---------------
 .btn-info {
-  @include desktop {
+  @include max-screen {
     cursor: pointer;
     margin-bottom: 100px;
     margin-right: 0;
@@ -242,7 +242,7 @@
 }
 
 .read-more {
-  @include desktop {
+  @include max-screen {
     display: none;
   }
 

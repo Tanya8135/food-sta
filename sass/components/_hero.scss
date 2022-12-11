@@ -12,21 +12,37 @@
   display: block;
 }
 
-.hero-img {
-  @include min-mobile {
+// .hero-img {
+//   @include min-mobile {
+//     display: none;
+//   }
+
+//   @include mobile {
+//     display: none;
+//   }
+
+//   position: absolute;
+//   top: 149px;
+//   right: 42px;
+//   display: flex;
+// }
+
+// -------------------------------------
+@include min-mobile {
+  .hero-img {
     display: none;
   }
-
-  @include mobile {
-    display: none;
-  }
-
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  display: flex;
-  padding-top: 149px;
 }
+
+@include tablet {
+  .hero-img {
+    display: block;
+    position: absolute;
+    top: 149px;
+    right: 42px;
+  }
+}
+// --------------------------------------
 
 .hero-circle {
   @include min-mobile {
@@ -74,16 +90,20 @@
 }
 
 .hero-title {
-  @include tablet {
-    min-width: 537px;
+   @include tablet {
     font-size: 42px;
-    padding-bottom: 44px;
   }
 
+  @include desktop {
+    font-size: 48px;
+  }
+  
   @include font(28px, 700, 1.2);
 
   color: $title-hero-color;
   padding-bottom: 28px;
+
+ 
 }
 
 .hero-text {
